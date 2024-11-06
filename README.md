@@ -24,36 +24,28 @@ npm i react-querybuilder @react-querybuilder/chakra @chakra-ui/icons @chakra-ui/
 To configure the query builder to use Chakra-compatible components, place `QueryBuilderChakra` above `QueryBuilder` and beneath `ChakraProvider` in the component hierarchy.
 
 ```tsx
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import { QueryBuilderChakra } from "@react-querybuilder/chakra";
-import { useState } from "react";
-import {
-  type Field,
-  QueryBuilder,
-  type RuleGroupType,
-} from "react-querybuilder";
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { QueryBuilderChakra } from '@react-querybuilder/chakra';
+import { useState } from 'react';
+import { type Field, QueryBuilder, type RuleGroupType } from 'react-querybuilder';
 
 const chakraTheme = extendTheme();
 
 const fields: Field[] = [
-  { name: "firstName", label: "First Name" },
-  { name: "lastName", label: "Last Name" },
+  { name: 'firstName', label: 'First Name' },
+  { name: 'lastName', label: 'Last Name' },
 ];
 
 export function App() {
   const [query, setQuery] = useState<RuleGroupType>({
-    combinator: "and",
+    combinator: 'and',
     rules: [],
   });
 
   return (
     <ChakraProvider theme={chakraTheme}>
       <QueryBuilderChakra>
-        <QueryBuilder
-          fields={fields}
-          defaultQuery={query}
-          onQueryChange={setQuery}
-        />
+        <QueryBuilder fields={fields} defaultQuery={query} onQueryChange={setQuery} />
       </QueryBuilderChakra>
     </ChakraProvider>
   );
