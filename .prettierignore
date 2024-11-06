@@ -1,0 +1,17 @@
+# Hidden(ish) files
+**/.*
+
+# Generated
+*Parser.js
+
+# Binaries
+*.jpeg
+*.jpg
+*.png
+*.svg
+bun.lockb
+
+# Unsupported
+*.jison
+*.toml
+CNAME

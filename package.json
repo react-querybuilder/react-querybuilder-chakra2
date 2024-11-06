@@ -1,0 +1,93 @@
+{
+  "name": "@react-querybuilder/chakra2",
+  "description": "Custom Chakra UI v2 components for react-querybuilder",
+  "version": "7.7.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/react-querybuilder_chakra2.legacy-esm.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/types-esm/index.d.mts",
+        "default": "./dist/react-querybuilder_chakra2.mjs"
+      },
+      "require": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-querybuilder/react-querybuilder-chakra2.git"
+  },
+  "license": "MIT",
+  "homepage": "https://react-querybuilder.js.org/",
+  "keywords": [
+    "react",
+    "querybuilder",
+    "chakra",
+    "chakra-ui",
+    "query",
+    "builder",
+    "operators",
+    "component",
+    "clause",
+    "expression",
+    "sql"
+  ],
+  "scripts": {
+    "start": "bunx --bun vite",
+    "build": "bunx --bun tsup",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "tsc --noEmit --watch",
+    "pretty-print": "prettier --config prettier.config.mjs --write '*.*' './src/**' './dev/**' './example/**'",
+    "pretty-check": "prettier --config prettier.config.mjs --check '*.*' './src/**' './dev/**' './example/**'",
+    "are-the-types-wrong": "attw --format table-flipped --pack ."
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.4",
+    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/react": "^2.10.3",
+    "@chakra-ui/system": "^2.6.2",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/bun": "^1.1.13",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/web": "^0.0.176",
+    "@vitejs/plugin-react": "^4.3.3",
+    "framer-motion": "^11.11.11",
+    "oxc-transform": "^0.35.0",
+    "prettier": "3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-querybuilder": "^7.7.1",
+    "sass": "^1.80.6",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  },
+  "peerDependencies": {
+    "@chakra-ui/icons": "^2",
+    "@chakra-ui/react": "^2",
+    "@chakra-ui/system": "^2",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^11",
+    "react": ">=18",
+    "react-querybuilder": "^7.7.1"
+  }
+}
