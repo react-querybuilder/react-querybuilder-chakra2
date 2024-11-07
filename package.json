@@ -51,7 +51,8 @@
     "typecheck:watch": "tsc --noEmit --watch",
     "pretty-print": "prettier --config prettier.config.mjs --write '*.*' './src/**' './dev/**' './example/**'",
     "pretty-check": "prettier --config prettier.config.mjs --check '*.*' './src/**' './dev/**' './example/**'",
-    "are-the-types-wrong": "attw --format table-flipped --pack ."
+    "are-the-types-wrong": "attw --format table-flipped --pack .",
+    "codesandbox-ci": "bash .codesandbox/ci.sh"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.16.4",

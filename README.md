@@ -6,7 +6,7 @@ Official [react-querybuilder](https://npmjs.com/package/react-querybuilder) comp
 >
 > This package is only compatible with Chakra UI **version 2**.
 >
-> For Chakra UI version 3 compatibility, use [`@react-querybuilder/chakra`](https://npmjs.com/package/@react-querybuilder/chakra).
+> For Chakra UI version 3 compatibility, use [`@react-querybuilder/chakra`](https://npmjs.com/package/@react-querybuilder/chakra) >= 8.
 
 - [Demo (using latest Chakra UI)](https://react-querybuilder.js.org/demo/chakra)
 - [Full documentation](https://react-querybuilder.js.org/)
