@@ -1,5 +1,5 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import { QueryBuilderChakra } from '@react-querybuilder/chakra';
+import { QueryBuilderChakra } from '@react-querybuilder/chakra2';
 import { useState } from 'react';
 import type { Field, RuleGroupType } from 'react-querybuilder';
 import { QueryBuilder, formatQuery } from 'react-querybuilder';
