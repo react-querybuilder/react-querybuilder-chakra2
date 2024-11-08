@@ -17,7 +17,7 @@ Official [react-querybuilder](https://npmjs.com/package/react-querybuilder) comp
 ## Installation
 
 ```bash
-npm i react-querybuilder @react-querybuilder/chakra @chakra-ui/icons @chakra-ui/react @chakra-ui/system @emotion/react @emotion/styled framer-motion
+npm i react-querybuilder @react-querybuilder/chakra @chakra-ui/icons@2 @chakra-ui/react@2 @chakra-ui/system@2 @emotion/react @emotion/styled framer-motion
 # OR yarn add / pnpm add / bun add
 ```
 
