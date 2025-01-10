@@ -1,7 +1,7 @@
 {
   "name": "@react-querybuilder/chakra2",
   "description": "Custom Chakra UI v2 components for react-querybuilder",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "publishConfig": {
     "access": "public"
   },
