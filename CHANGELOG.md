@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 N/A
 
+## [v8.1.0] - 2025-01-09
+
+- Synchronized version with `react-querybuilder`.
+
 ## [v8.0.0] - 2024-11-08
 
 - Synchronized version with `react-querybuilder`.
@@ -21,7 +25,8 @@ N/A
 
 <!-- #region Release comparison links -->
 
-[unreleased]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.0.0...HEAD
+[unreleased]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.1.0...HEAD
+[v8.1.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.0.0...v8.1.0
 [v8.0.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v7.7.1...v8.0.0
 [v7.7.1]: https://github.com/react-querybuilder/react-querybuilder-chakra2/releases/tag/v7.7.1
 

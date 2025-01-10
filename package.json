@@ -75,7 +75,7 @@
     "prettier": "3.4.2",
     "react": "^19",
     "react-dom": "^19",
-    "react-querybuilder": "8.0.0",
+    "react-querybuilder": "8.1.0",
     "sass": "1.83.1",
     "tsup": "8.3.5",
     "typescript": "5.7.3",
