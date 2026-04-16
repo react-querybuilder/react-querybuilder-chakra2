@@ -3,7 +3,7 @@ import * as React from 'react';
 import type { ValueEditorProps } from 'react-querybuilder';
 import { ValueEditor, useValueEditor } from 'react-querybuilder';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// oxlint-disable-next-line no-explicit-any
 type ChakraValueEditorProps = ValueEditorProps & { extraProps?: Record<string, any> };
 
 export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.Element | null => {

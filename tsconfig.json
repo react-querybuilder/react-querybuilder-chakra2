@@ -7,12 +7,15 @@
     "isolatedModules": true,
     "jsx": "react",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "types": ["@testing-library/jest-dom", "node", "web", "bun"]
+    "types": ["node", "web", "bun"],
+    "paths": {
+      "@react-querybuilder/chakra2": ["./src"]
+    }
   },
-  "include": ["./src/", "./dev/"]
+  "include": ["./*.ts", "./src/", "./dev/"]
 }
