@@ -27,7 +27,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-querybuilder/react-querybuilder-chakra2.git"
+    "url": "git+https://github.com/react-querybuilder/react-querybuilder-chakra2.git"
   },
   "license": "MIT",
   "homepage": "https://react-querybuilder.js.org/",
