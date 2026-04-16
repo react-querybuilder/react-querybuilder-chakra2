@@ -1,8 +1,6 @@
-import type { BaseOption, Field, RuleGroupType, RuleGroupTypeIC } from 'react-querybuilder';
+import type { Field, RuleGroupType, RuleGroupTypeIC } from 'react-querybuilder';
 import { convertToIC, defaultOperators, generateID } from 'react-querybuilder';
 import { musicalInstruments } from './musicalInstruments';
-
-const dos = defaultOperators as BaseOption[];
 
 export const fields: Field[] = [
   {
@@ -21,7 +19,7 @@ export const fields: Field[] = [
     name: 'isMusician',
     label: 'Is a musician',
     valueEditorType: 'checkbox',
-    operators: dos.filter(op => op.name === '='),
+    operators: defaultOperators.filter(op => op.name === '='),
     defaultValue: false,
   },
   {
@@ -30,7 +28,7 @@ export const fields: Field[] = [
     valueEditorType: 'select',
     values: musicalInstruments,
     defaultValue: 'Cowbell',
-    operators: dos.filter(op => op.name === '=' || op.name === 'in'),
+    operators: defaultOperators.filter(op => op.name === '=' || op.name === 'in'),
   },
   {
     name: 'alsoPlays',
@@ -38,12 +36,12 @@ export const fields: Field[] = [
     valueEditorType: 'multiselect',
     values: musicalInstruments,
     defaultValue: 'More cowbell',
-    operators: dos.filter(op => op.name === 'in'),
+    operators: defaultOperators.filter(op => op.name === 'in'),
   },
   {
     name: 'gender',
     label: 'Gender',
-    operators: dos.filter(op => op.name === '='),
+    operators: defaultOperators.filter(op => op.name === '='),
     valueEditorType: 'radio',
     values: [
       { name: 'M', label: 'Male' },
