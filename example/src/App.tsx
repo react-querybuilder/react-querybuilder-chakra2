@@ -1,4 +1,5 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+// @ts-ignore
 import { QueryBuilderChakra } from '@react-querybuilder/chakra2';
 import { useState } from 'react';
 import type { Field, RuleGroupType } from 'react-querybuilder';
