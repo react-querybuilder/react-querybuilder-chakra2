@@ -8,7 +8,7 @@ export default (async options => {
   const commonOptions = {
     sourcemap: true,
     platform: 'neutral',
-    dts: { oxc: true },
+    dts: { oxc: {} },
     ...options,
   } satisfies UserConfig;
 
