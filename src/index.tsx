@@ -5,6 +5,7 @@ import {
   CopyIcon,
   LockIcon,
   UnlockIcon,
+  UpDownIcon,
 } from '@chakra-ui/icons';
 import * as React from 'react';
 import type {
@@ -39,6 +40,7 @@ export const chakraTranslations: Partial<Translations> = {
   removeRule: { label: <CloseIcon /> },
   cloneRuleGroup: { label: <CopyIcon /> },
   cloneRule: { label: <CopyIcon /> },
+  ungroupRuleGroup: { label: <UpDownIcon /> },
   lockGroup: { label: <UnlockIcon /> },
   lockRule: { label: <UnlockIcon /> },
   lockGroupDisabled: { label: <LockIcon /> },
