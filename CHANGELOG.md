@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-N/A
+## [v8.24.0] - 2025-09-16
+
+### Added
+
+- "Ungroup" icon for `react-querybuilder`'s new ungroup feature.
 
 ## [v8.15.0] - 2025-01-09
 
@@ -25,11 +29,12 @@ N/A
 
 ### Added
 
-- Initial publish. For changes prior to this release, see the [react-querybuilder changelog](https://github.com/react-querybuilder/react-querybuilder/blob/main/CHANGELOG.md#v771---2024-10-21).
+- Initial publish. For changes prior to this release, see the [`react-querybuilder` changelog](https://github.com/react-querybuilder/react-querybuilder/blob/main/CHANGELOG.md#v771---2024-10-21).
 
 <!-- #region Release comparison links -->
 
-[unreleased]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.15.0...HEAD
+[unreleased]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.24.0...HEAD
+[v8.24.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.15.0...v8.24.0
 [v8.15.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.1.0...v8.15.0
 [v8.1.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.0.0...v8.1.0
 [v8.0.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v7.7.1...v8.0.0
