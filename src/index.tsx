@@ -6,6 +6,8 @@ import {
   LockIcon,
   UnlockIcon,
   UpDownIcon,
+  ViewIcon,
+  ViewOffIcon,
 } from '@chakra-ui/icons';
 import * as React from 'react';
 import type {
@@ -18,12 +20,14 @@ import { getCompatContextProvider } from 'react-querybuilder';
 import { ChakraActionElement } from './ChakraActionElement';
 import { ChakraDragHandle } from './ChakraDragHandle';
 import { ChakraNotToggle } from './ChakraNotToggle';
+import { ChakraShiftActions } from './ChakraShiftActions';
 import { ChakraValueEditor } from './ChakraValueEditor';
 import { ChakraValueSelector } from './ChakraValueSelector';
 
 export * from './ChakraActionElement';
 export * from './ChakraDragHandle';
 export * from './ChakraNotToggle';
+export * from './ChakraShiftActions';
 export * from './ChakraValueEditor';
 export * from './ChakraValueSelector';
 
@@ -32,6 +36,7 @@ export const chakraControlElements: ControlElementsProp<FullField, string> = {
   valueSelector: ChakraValueSelector,
   dragHandle: ChakraDragHandle,
   notToggle: ChakraNotToggle,
+  shiftActions: ChakraShiftActions,
   valueEditor: ChakraValueEditor,
 };
 
@@ -45,6 +50,10 @@ export const chakraTranslations: Partial<Translations> = {
   lockRule: { label: <UnlockIcon /> },
   lockGroupDisabled: { label: <LockIcon /> },
   lockRuleDisabled: { label: <LockIcon /> },
+  muteRule: { label: <ViewIcon /> },
+  muteGroup: { label: <ViewIcon /> },
+  unmuteRule: { label: <ViewOffIcon /> },
+  unmuteGroup: { label: <ViewOffIcon /> },
   shiftActionDown: { label: <ChevronDownIcon /> },
   shiftActionUp: { label: <ChevronUpIcon /> },
 };

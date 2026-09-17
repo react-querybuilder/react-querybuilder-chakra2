@@ -4,7 +4,7 @@ import type { ValueEditorProps } from 'react-querybuilder';
 import { ValueEditor, useValueEditor } from 'react-querybuilder';
 
 // oxlint-disable-next-line no-explicit-any
-type ChakraValueEditorProps = ValueEditorProps & { extraProps?: Record<string, any> };
+export type ChakraValueEditorProps = ValueEditorProps & { extraProps?: Record<string, any> };
 
 export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.Element | null => {
   const {
@@ -19,7 +19,7 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
     values = [],
     listsAsArrays: _listsAsArrays,
     separator,
-    valueSource: _vs,
+    valueSource: _valueSource,
     testID,
     disabled,
     selectorComponent: SelectorComponent = allProps.schema.controls.valueSelector,
@@ -34,7 +34,7 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
     return null;
   }
 
-  const placeHolderText = fieldData?.placeholder ?? '';
+  const placeholderText = fieldData?.placeholder ?? '';
   const inputTypeCoerced = ['in', 'notIn'].includes(operator) ? 'text' : inputType || 'text';
 
   if (
@@ -50,7 +50,7 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
             value={valueAsArray[i] ?? ''}
             isDisabled={disabled}
             className={valueListItemClassName}
-            placeholder={placeHolderText}
+            placeholder={placeholderText}
             onChange={e => multiValueHandler(e.target.value, i)}
             {...extraProps}
           />
@@ -72,6 +72,7 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
       return (
         <SelectorComponent
           {...propsForValueSelector}
+          data-testid={testID}
           className={className}
           title={title}
           value={value}
@@ -87,11 +88,12 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
     case 'textarea':
       return (
         <Textarea
+          data-testid={testID}
           value={value}
           title={title}
           isDisabled={disabled}
           className={className}
-          placeholder={placeHolderText}
+          placeholder={placeholderText}
           onChange={e => handleOnChange(e.target.value)}
           {...extraProps}
         />
@@ -100,6 +102,7 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
     case 'switch':
       return (
         <Switch
+          data-testid={testID}
           className={className}
           isChecked={!!value}
           title={title}
@@ -112,6 +115,7 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
     case 'checkbox':
       return (
         <Checkbox
+          data-testid={testID}
           className={className}
           title={title}
           isDisabled={disabled}
@@ -124,6 +128,7 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
     case 'radio':
       return (
         <RadioGroup
+          data-testid={testID}
           className={className}
           title={title}
           value={value}
@@ -143,12 +148,13 @@ export const ChakraValueEditor = (allProps: ChakraValueEditorProps): React.JSX.E
 
   return (
     <Input
+      data-testid={testID}
       type={inputTypeCoerced}
       value={value}
       title={title}
       isDisabled={disabled}
       className={className}
-      placeholder={placeHolderText}
+      placeholder={placeholderText}
       onChange={e => handleOnChange(e.target.value)}
       {...extraProps}
     />
