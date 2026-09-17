@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": [],
   "printWidth": 100,
   "tabWidth": 2,
   "useTabs": false,
@@ -15,6 +14,28 @@
   "sortImports": {
     "newlinesBetween": false
   },
+  "ignorePatterns": [
+    // Hidden(ish) files
+    "**/.*",
+    // Generated
+    "*Parser.js",
+    // Binaries
+    "*.jpeg",
+    "*.jpg",
+    "*.png",
+    "*.svg",
+    "bun.lockb",
+    // Unsupported
+    "*.jison",
+    "*.toml",
+    "CNAME",
+    "*.go",
+    "go.mod",
+    "go.sum",
+    // Misc
+    "lerna.json",
+    "bun.lock"
+  ],
   "overrides": [{
     "files": ["example/**/*.ts{,x}"],
     "options": {
