@@ -6,6 +6,8 @@ import {
   LockIcon,
   UnlockIcon,
   UpDownIcon,
+  ViewIcon,
+  ViewOffIcon,
 } from '@chakra-ui/icons';
 import * as React from 'react';
 import type {
@@ -48,6 +50,10 @@ export const chakraTranslations: Partial<Translations> = {
   lockRule: { label: <UnlockIcon /> },
   lockGroupDisabled: { label: <LockIcon /> },
   lockRuleDisabled: { label: <LockIcon /> },
+  muteRule: { label: <ViewIcon /> },
+  muteGroup: { label: <ViewIcon /> },
+  unmuteRule: { label: <ViewOffIcon /> },
+  unmuteGroup: { label: <ViewOffIcon /> },
   shiftActionDown: { label: <ChevronDownIcon /> },
   shiftActionUp: { label: <ChevronUpIcon /> },
 };
