@@ -17,7 +17,7 @@ Official [react-querybuilder](https://npmjs.com/package/react-querybuilder) comp
 ## Installation
 
 ```bash
-npm i react-querybuilder @react-querybuilder/chakra @chakra-ui/icons@2 @chakra-ui/react@2 @chakra-ui/system@2 @emotion/react @emotion/styled framer-motion
+npm i react-querybuilder @react-querybuilder/chakra2 @chakra-ui/icons@2 @chakra-ui/react@2 @chakra-ui/system@2 @emotion/react @emotion/styled framer-motion
 # OR yarn add / pnpm add / bun add
 ```
 
@@ -27,7 +27,7 @@ To configure the query builder to use Chakra-compatible components, place `Query
 
 ```tsx
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import { QueryBuilderChakra } from '@react-querybuilder/chakra';
+import { QueryBuilderChakra } from '@react-querybuilder/chakra2';
 import { useState } from 'react';
 import { type Field, QueryBuilder, type RuleGroupType } from 'react-querybuilder';
 
