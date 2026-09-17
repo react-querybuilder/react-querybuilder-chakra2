@@ -5,11 +5,11 @@ import * as React from 'react';
 import { forwardRef } from 'react';
 import type { DragHandleProps } from 'react-querybuilder';
 
-type IBP = ComponentPropsWithRef<typeof IconButton>;
+type IconButtonProps = ComponentPropsWithRef<typeof IconButton>;
 
 export type ChakraDragHandleProps = DragHandleProps &
-  Omit<IBP, 'aria-label'> &
-  Partial<Pick<IBP, 'aria-label'>>;
+  Omit<IconButtonProps, 'aria-label'> &
+  Partial<Pick<IconButtonProps, 'aria-label'>>;
 
 export const ChakraDragHandle: React.ForwardRefExoticComponent<
   Omit<ChakraDragHandleProps, 'ref'> & React.RefAttributes<HTMLSpanElement>
@@ -19,8 +19,8 @@ export const ChakraDragHandle: React.ForwardRefExoticComponent<
       className,
       title,
       disabled,
+      testID,
       // Props that should not be in extraProps
-      testID: _testID,
       level: _level,
       path: _path,
       label: _label,
@@ -32,11 +32,11 @@ export const ChakraDragHandle: React.ForwardRefExoticComponent<
     },
     dragRef
   ) => (
-    <span ref={dragRef} className={className} title={title}>
+    <span data-testid={testID} ref={dragRef} className={className} title={title}>
       <IconButton
         isDisabled={disabled}
         icon={<DragHandleIcon />}
-        aria-label={title ?? /* istanbul ignore next */ ''}
+        aria-label={title ?? ''}
         {...extraProps}
       />
     </span>

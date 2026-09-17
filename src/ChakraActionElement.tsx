@@ -12,8 +12,8 @@ export const ChakraActionElement = ({
   title,
   disabled,
   disabledTranslation,
+  testID,
   // Props that should not be in extraProps
-  testID: _testID,
   rules: _rules,
   level: _level,
   path: _path,
@@ -24,6 +24,7 @@ export const ChakraActionElement = ({
   ...extraProps
 }: ChakraActionProps): React.JSX.Element => (
   <Button
+    data-testid={testID}
     className={className}
     title={disabledTranslation && disabled ? disabledTranslation.title : title}
     onClick={e => handleOnClick(e)}

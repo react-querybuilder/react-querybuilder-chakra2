@@ -13,11 +13,11 @@ export const ChakraNotToggle = ({
   checked,
   title,
   disabled,
+  testID,
   // Props that should not be in extraProps
   path: _path,
   context: _context,
   validation: _validation,
-  testID: _testID,
   schema: _schema,
   ruleGroup: _ruleGroup,
   ...extraProps
@@ -27,6 +27,7 @@ export const ChakraNotToggle = ({
   return (
     <div style={{ display: 'inline-block' }}>
       <FormControl
+        data-testid={testID}
         display="flex"
         alignItems="center"
         className={className}
