@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.24.1] - 2025-09-17
+
+### Added
+
+- `ChakraShiftActions` is now exported and included in `chakraControlElements`.
+- "Mute"/"unmute" icons for `react-querybuilder`'s mute feature.
+- `testID` prop is now applied as `data-testid` on all components.
+
+### Fixed
+
+- `ChakraValueSelector` uses `useValueSelector`/`useSelectElementChangeHandler`, so multi-value ("between"/"in") selections work correctly. It also properly disables the `Select` (`isDisabled` instead of `disabled`).
+- Production builds now define `process.env.NODE_ENV` correctly.
+
 ## [v8.24.0] - 2025-09-16
 
 ### Added
@@ -33,7 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- #region Release comparison links -->
 
-[unreleased]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.24.0...HEAD
+[unreleased]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.24.1...HEAD
+[v8.24.1]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.24.0...v8.24.1
 [v8.24.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.15.0...v8.24.0
 [v8.15.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.1.0...v8.15.0
 [v8.1.0]: https://github.com/react-querybuilder/react-querybuilder-chakra2/compare/v8.0.0...v8.1.0
