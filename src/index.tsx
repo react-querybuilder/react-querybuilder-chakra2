@@ -18,12 +18,14 @@ import { getCompatContextProvider } from 'react-querybuilder';
 import { ChakraActionElement } from './ChakraActionElement';
 import { ChakraDragHandle } from './ChakraDragHandle';
 import { ChakraNotToggle } from './ChakraNotToggle';
+import { ChakraShiftActions } from './ChakraShiftActions';
 import { ChakraValueEditor } from './ChakraValueEditor';
 import { ChakraValueSelector } from './ChakraValueSelector';
 
 export * from './ChakraActionElement';
 export * from './ChakraDragHandle';
 export * from './ChakraNotToggle';
+export * from './ChakraShiftActions';
 export * from './ChakraValueEditor';
 export * from './ChakraValueSelector';
 
@@ -32,6 +34,7 @@ export const chakraControlElements: ControlElementsProp<FullField, string> = {
   valueSelector: ChakraValueSelector,
   dragHandle: ChakraDragHandle,
   notToggle: ChakraNotToggle,
+  shiftActions: ChakraShiftActions,
   valueEditor: ChakraValueEditor,
 };
 
