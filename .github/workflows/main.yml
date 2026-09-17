@@ -13,3 +13,4 @@ jobs:
       - run: bun run build
       - run: bun run lint --format=github
       - run: bun run fmt --check
+      - run: bun run are-the-types-wrong
