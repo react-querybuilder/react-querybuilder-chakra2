@@ -14,7 +14,7 @@ export default (async options => {
 
   const productionOptions = {
     minify: true,
-    define: { NODE_ENV: 'production' },
+    define: { 'process.env.NODE_ENV': 'production' },
   } satisfies UserConfig;
 
   const opts: UserConfig[] = [
