@@ -83,6 +83,7 @@ export function App() {
 | `ChakraActionElement`   | `controlElements.actionElement` |
 | `ChakraDragHandle`      | `controlElements.dragHandle`    |
 | `ChakraNotToggle`       | `controlElements.notToggle`     |
+| `ChakraShiftActions`    | `controlElements.shiftActions`  |
 | `ChakraValueEditor`     | `controlElements.valueEditor`   |
 | `ChakraValueSelector`   | `controlElements.valueSelector` |
 
